@@ -15,9 +15,9 @@
  .product-cover
   {
     width:300px;
-    height:380px;
-    border:2px solid grey;
-    border-radius: 2px;
+    height:370px;
+    border:2px solid gray;
+    border-radius: 10px;
     padding:10px;
    
   }
@@ -32,9 +32,9 @@
   text-align: center;
   
 }
-/* .btn{
- margin-right: auto;
-} */
+.btn{
+ margin-left: auto;
+}
 .details-container{
   display:flex;
   flex-direction:row;

@@ -2,7 +2,7 @@ import React from "react";
 import "../App.css";
 
 import IconButton from "@material-ui/core/IconButton";
-import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
+import AddShoppingCartIcon from "@material-ui/icons/AddShoppingCart";
 
 const productInfo = [
   {
@@ -21,7 +21,7 @@ const productInfo = [
   },
   {
     id: 3,
-    image: "https://m.media-amazon.com/images/I/81d-4fJsnDL._AC_SL1500_.jpg", 
+    image: "https://m.media-amazon.com/images/I/81d-4fJsnDL._AC_SL1500_.jpg",
     title: "Camera",
 
     price: "100.00 Rs",
@@ -39,7 +39,7 @@ const productInfo = [
     image:
       "https://www.ikea.com/ae/en/images/products/vallentuna-sofa-bed-module-with-backrests-kelinge-rust__0938369_pe794076_s5.jpg?f=xl",
     price: "1554.90Rs",
-    title:"Sofa",
+    title: "Sofa",
     time: "30 days",
   },
   {
@@ -50,15 +50,15 @@ const productInfo = [
     time: "1 day",
   },
   {
-    title:"Sofa",
+    title: "Sofa",
     image:
       "https://www.ikea.com/ae/en/images/products/vimle-2-seat-sofa-bed-gunnared-medium-grey__0787226_pe763189_s5.jpg?f=xl",
-    price:"23345.00 Rs",
+    price: "23345.00 Rs",
     time: "10 days",
     id: 7,
   },
   {
-    title:"Bed",
+    title: "Bed",
     price: "12345.00 Rs",
     time: "15 days",
     id: 8,
@@ -71,17 +71,20 @@ export const Product = () => {
   return (
     <div className="product-container">
       {productInfo.map((product, index) => (
-        <div className="product-cover"> 
+        <div className="product-cover">
           <img src={product.image} alt="image" className="product-image" />
-          <div className ="details-container">
-           
-            <p  className="detail"> {product.title}<br/> {product.time} &nbsp;&nbsp;{product.price}</p>
-            <p  className="btn">
-            <IconButton color="black" aria-label="add to shopping cart">
-            <AddShoppingCartIcon />
-            </IconButton>
+          <div className="details-container">
+            <p className="detail">
+              {" "}
+              {product.title}
+              <br /> {product.time} &nbsp;&nbsp;{product.price}
             </p>
-            </div>
+            <p className="btn">
+              <IconButton color="black" aria-label="add to shopping cart">
+                <AddShoppingCartIcon />
+              </IconButton>
+            </p>
+          </div>
         </div>
       ))}
     </div>
