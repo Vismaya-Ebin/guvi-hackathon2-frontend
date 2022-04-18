@@ -1,0 +1,45 @@
+.product-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:50px;
+    justify-content:center;
+    
+    
+   }
+   .detail{
+     font-size:14px;
+     font-weight:bold;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     
+   }
+   .product-cover
+    {
+      width:300px;
+      height:370px;
+      border:2px solid gray;
+      border-radius: 10px;
+      padding:10px;
+     
+    }
+  .product-image{
+    width:300px;
+    height:300px;
+    object-fit: cover;
+  }
+  .product-detail{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    
+  }
+  .btn{
+   margin-left: auto;
+  }
+  .details-container{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+   justify-content: space-between;
+   
+    
+  }
