@@ -1,9 +1,10 @@
 import React from "react";
+import './cart.css';
 export function Cart({ cartItems ,onAdd,onRemove}) {
   console.log(`inside Cart component`,cartItems);
   return (
-    <aside className="block col-1">
-      <h1> Cart Items</h1>
+    <aside className="cart-container">
+   
       {cartItems.length === 0 ? (
         <div className="empty-cart">Cart is Empty</div>
       ) : (
@@ -12,7 +13,7 @@ export function Cart({ cartItems ,onAdd,onRemove}) {
 
       
       {cartItems.map((item) => (
-          <div key={item.id} className="row">
+          <div key={item.id} className="cart-container">
             <div className="col-2">{item.title}</div>
             <div className="col-2">
               <button onClick={() => onRemove(item)} className="remove">
@@ -23,9 +24,7 @@ export function Cart({ cartItems ,onAdd,onRemove}) {
               </button>
             </div>
 
-            <div className="col-2 text-right">
-              {item.quantity} {`*`} { +item.price } 
-            </div>
+          
           </div>
         ))}
     </aside>
